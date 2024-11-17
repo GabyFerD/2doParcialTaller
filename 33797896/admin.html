@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const user = params.get("user");
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white p-3 text-center">
+      <h1>LibroJuego "El Enigma de las Sombras"</h1>
+    </header>
+
+    <!-- Bienvenida -->
+    <section class="container mt-5">
+      <h2 id="welcomeMessage"></h2>
+    </section>
+
+    <!-- Formulario ABM -->
+    <section class="mt-4 containerAdmin">
+      <h3 class="formAdmin">Gestión de Capítulos</h3>
+      <form>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Título del capítulo"
+        />
+        <textarea
+          class="form-control mb-3"
+          rows="3"
+          placeholder="Texto del capítulo"
+        ></textarea>
+        <button class="btn btn-success">Agregar</button>
+        <button class="btn btn-success">Modificar</button>
+        <button class="btn btn-success">Eliminar</button>
+      </form>
+      <a href="index.html" class="btn btn-secondary mt-4">Volver al Home</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center p-3 mt-5">
+      <p>
+        © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
+      </p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

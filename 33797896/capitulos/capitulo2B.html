@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Enigma de las Sombras - Capítulo 2B</title>
+    <link rel="stylesheet" href="../css/styles1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center p-4">
+      <h1>LibroJuego "El Enigma de las Sombras"</h1>
+    </header>
+    <!-- Contenedor Principal -->
+    <main class="container mt-5 mb-5 content-transparent">
+      <h2>Capítulo 2B: Explorar las celdas de los pacientes</h2>
+      <p>
+        Decides avanzar por el largo y oscuro corredor hacia las celdas. El aire
+        está cargado de un silencio espeso, roto solo por el goteo constante del
+        agua que se filtra por las paredes mohosas. En cada celda, encuentras
+        rastros de lo que alguna vez fueron pacientes: dibujos extraños en las
+        paredes, gritos silenciosos de locura que aún resuenan en el aire.
+      </p>
+      <p>
+        Te detienes frente a una celda más grande y ves un cuaderno antiguo en
+        el suelo. Lo recoges y, al abrirlo, te das cuenta de que es un diario de
+        uno de los internos. Las últimas páginas revelan un nombre: "El Cuervo",
+        y detallan una conspiración para controlar a los ciudadanos más
+        influyentes de Ravenwood. Descubres que los asesinatos recientes son
+        parte de un plan macabro para encubrir secretos que podrían sacudir la
+        ciudad.
+      </p>
+      <p>
+        De repente, un hombre aparece al final del pasillo, apuntándote con una
+        pistola. Reconoces su rostro: es el jefe de policía, uno de los
+        supuestos aliados en tu investigación. "Sabías demasiado", dice antes de
+        apretar el gatillo. La última imagen que ves es el techo gris del
+        manicomio mientras la vida se desvanece de tu cuerpo.
+      </p>
+
+      <h2>FIN: Traicionado y asesinado por aquellos que juraron protegerte.</h2>
+
+      <!-- Formulario de Login -->
+      <section class="container mt-5">
+        <fieldset class="p-4 rounded">
+          <legend class="text-center text-danger fw-bold">Formulario</legend>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Ingresa tu Nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="pais" class="form-label">Pais:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pais"
+                placeholder="Ingresa tu Pais"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mail" class="form-label">Mail:</label>
+              <input
+                type="mail"
+                class="form-control"
+                id="mail"
+                placeholder="Ingresa tu mail"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn-cap2">Registrar Puntaje</button>
+          </form>
+        </fieldset>
+      </section>
+
+      <a href="../index.html" class="mt-4 btn-exit">Volver al Home.</a>
+    </main>
+    <!-- Footer -->
+    <footer class="text-white text-center p-4">
+      © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
+    </footer>
+    <!-- Audio -->
+    <audio id="suspenseAudio3" autoplay loop>
+      <source src="../multimedia/gritoTerrorifico.mp3" type="audio/mp3" />
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <script>
+      //Bucle de Audio
+      const audio3 = document.getElementById("suspenseAudio3");
+      audio3.loop = true;
+      audio3.play();
+    </script>
+  </body>
+</html>

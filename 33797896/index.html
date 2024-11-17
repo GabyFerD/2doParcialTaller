@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Enigma de las Sombras</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center p-4">
+      <h1>LibroJuego "El Enigma de las Sombras"</h1>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="container mt-5 mb-5 content-transparent">
+      <!-- Sección de Bienvenida -->
+      <section class="container mt-5">
+        <p>
+          Adéntrate en un mundo donde cada decisión puede ser la última. Un
+          misterioso caso ha dejado a la ciudad sumida en el pánico, y tú eres
+          la única esperanza para resolverlo. Como protagonista, tendrás que
+          explorar oscuros secretos, enfrentarte a giros inesperados y
+          desentrañar enigmas que pondrán a prueba tu ingenio.
+        </p>
+        <p>
+          Cada elección que tomes te llevará por un camino diferente: algunos te
+          acercarán a la verdad, mientras que otros podrían ser tu perdición.
+          ¿Podrás descubrir quién está detrás de los crímenes antes de que sea
+          demasiado tarde?
+        </p>
+        <p>
+          Bienvenido a "El Enigma de las Sombras", donde el suspenso está en
+          cada página y el peligro acecha en cada rincón. El destino está en tus
+          manos… ¿Estás listo para comenzar el juego?
+        </p>
+        <p>Recuerda subir el Volumen de tu ordenador...</p>
+      </section>
+
+      <!-- Botón para Comenzar el Juego -->
+      <section class="container text-center mt-4">
+        <a href="librojuego.html" class="btn btn-success btn-lg"
+          >¡Que Comience el Juego!</a
+        >
+      </section>
+
+      <!-- Formulario de Login -->
+      <section class="container mt-5">
+        <fieldset class="p-4 rounded">
+          <legend class="text-center text-danger fw-bold">Login</legend>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Usuario:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Ingresa tu usuario"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Ingresa tu contraseña"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Registrar Puntaje
+            </button>
+          </form>
+          <p id="loginMessage" class="text-danger mt-2"></p>
+        </fieldset>
+      </section>
+
+      <!-- Historial de Puntajes -->
+      <section class="containerTable">
+        <h2 class="text-center text-danger">Puntajes Más Altos</h2>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>GustavoM05</td>
+              <td>950</td>
+              <td>Argentina</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Feer_15</td>
+              <td>920</td>
+              <td>España</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>SoyTom</td>
+              <td>890</td>
+              <td>Chile</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="text-white text-center p-3 mt-5">
+      <p>
+        © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
+      </p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

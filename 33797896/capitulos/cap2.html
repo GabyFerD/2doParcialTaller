@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Enigma de las Sombras - Capítulo 2</title>
+    <link rel="stylesheet" href="../css/styles1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="text-white text-center p-4">
+      <h1>LibroJuego "El Enigma de las Sombras"</h1>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="container mt-5 mb-5 content-transparent">
+      <h2>Capítulo 2: Ir al Manicomio de Ravenwood</h2>
+      <p>
+        El aire frío de la noche se vuelve aún más gélido mientras te acercas al
+        imponente edificio del manicomio de Ravenwood. Las paredes de ladrillo
+        gris parecen absorber la luz de la luna, proyectando sombras
+        inquietantes que se retuercen en la neblina. Se dice que este lugar ha
+        estado abandonado durante años, pero algunos rumores aseguran que
+        extrañas luces y sonidos emanan de su interior.
+      </p>
+      <p>
+        Al empujar las puertas de hierro forjado, un chillido agudo resuena por
+        los pasillos oscuros. La atmósfera es pesada, cargada de un silencio
+        inquietante. Caminas cautelosamente, sabiendo que cada paso podría
+        revelar un secreto macabro o atraer la atención de algo que acecha en
+        las sombras.
+      </p>
+      <p>
+        Frente a ti, el pasillo se bifurca en dos direcciones. A tu izquierda,
+        unas escaleras descendentes conducen a lo que parece ser el sótano, de
+        donde proviene un leve murmullo. A tu derecha, un corredor largo y
+        oscuro que lleva a las antiguas celdas de los pacientes. Un destello de
+        luz parpadeante se asoma en la distancia.
+      </p>
+
+      <!-- Opciones -->
+      <div class="text-center mt-4">
+        <h3>¿Qué decides hacer?</h3>
+        <div class="d-grid gap-3 mt-4 opciones">
+          <!-- Opción 1 -->
+          <button
+            onclick="window.location.href='capitulo2A.html'"
+            class="btn-cap2"
+          >
+            Bajar al sótano para investigar los murmullos
+          </button>
+
+          <!-- Opción 2 -->
+          <button
+            onclick="window.location.href='capitulo2B.html'"
+            class="btn-cap2"
+          >
+            Explorar las celdas de los pacientes para encontrar pistas
+          </button>
+          <a href="../index.html" class="mt-4 btn-exit">Abandonar el juego.</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white text-center p-4">
+      © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
+    </footer>
+
+    <audio id="suspenseAudio3" autoplay loop>
+      <source src="../multimedia/audioSuspenso.mp3" type="audio/mp3" />
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <script>
+      // Bucle de Audio
+      const audio3 = document.getElementById("suspenseAudio3");
+      audio3.loop = true;
+      audio3.play();
+    </script>
+  </body>
+</html>
