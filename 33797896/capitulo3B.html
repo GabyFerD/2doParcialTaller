@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El Enigma de las Sombras - Capítulo 2A</title>
+    <title>El Enigma de las Sombras - Capítulo 3B</title>
     <link rel="stylesheet" href="../css/styles1.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -17,36 +17,33 @@
     </header>
     <!-- Contenedor Principal -->
     <main class="container mt-5 mb-5 content-transparent">
-      <h2>Capítulo 2A: El Sotano de los Murmullos</h2>
+      <h2>Capítulo 3B: El cuaderno y el mapa</h2>
       <p>
-        Te decides a bajar al sótano, guiado por los tenues murmullos que
-        parecen llamar tu nombre. El aire se vuelve más denso con cada escalón,
-        y un hedor a humedad y descomposición invade tus sentidos. Al llegar al
-        último escalón, enciendes tu linterna para revelar un vasto y oscuro
-        sótano, con antiguos archivos esparcidos por el suelo y celdas oxidadas
-        alineadas en las paredes.
+        Decides ignorar a la figura encapuchada y centrarte en las pistas que
+        tienes frente a ti. Revisas el cuaderno y descubres que contiene
+        detalles sobre experimentos ilegales y sacrificios humanos que se
+        llevaban a cabo en las sombras de Ravenwood. El mapa revela ubicaciones
+        clave, incluida una mansión oculta en las afueras de la ciudad, donde
+        supuestamente se esconde el cerebro detrás de toda esta operación.
       </p>
       <p>
-        A medida que te adentras, los murmullos se intensifican. Sigues el
-        sonido hasta llegar a una puerta de acero con la inscripción "PACIENTES
-        EXPERIMENTALES". Con un nudo en la garganta, empujas la puerta. La
-        escena que se revela ante ti es escalofriante: cuerpos encadenados,
-        algunos aún respirando débilmente, con los ojos desorbitados y rostros
-        pálidos, víctimas de algún experimento inhumano.
+        Con el cuaderno en mano, te apresuras a salir del almacén y dirigirte a
+        la policía. Pero antes de llegar a la puerta, un grupo de hombres
+        armados te rodea. "No debiste encontrar eso", dice su líder con una voz
+        grave. Te llevan a la fuerza a un coche negro y te transportan a un
+        lugar desconocido.
       </p>
       <p>
-        De repente, escuchas pasos apresurados detrás de ti. Antes de que puedas
-        reaccionar, una sombra emerge de la oscuridad y te golpea en la cabeza.
-        Pierdes el conocimiento. Cuando abres los ojos, te encuentras encadenado
-        en una de las celdas. El mismo doctor que realizaba esos experimentos
-        ahora te observa con una sonrisa macabra.
+        Días después, tu cuerpo es encontrado flotando en el río de Ravenwood,
+        tu cuaderno desaparecido y el caso declarado como un accidente por
+        "falta de pruebas". Pero tu sacrificio no fue en vano: alguien, en algún
+        lugar, encontrará las pistas que dejaste atrás y continuará la búsqueda
+        de la verdad.
       </p>
-      <p>
-        Te conviertes en el último paciente de Ravenwood, condenado a compartir
-        el mismo destino que aquellos que intentaste salvar. Tus gritos se
-        pierden en la penumbra del manicomio, otro misterio sin resolver.
-      </p>
-      <h2>FIN: Capturado por el Doctor del Manicomio.</h2>
+
+      <h2>
+        FIN:Silenciado por la organización. Pero esta historia continuará...
+      </h2>
 
       <!-- Formulario de Login -->
       <section class="container mt-5">
@@ -84,12 +81,14 @@
               />
             </div>
 
-            <button type="submit" class="btn-cap2">Registrar Puntaje</button>
+            <button type="submit" class="btn-cap2 btn-puntaje">
+              Registrar Puntaje
+            </button>
           </form>
         </fieldset>
       </section>
 
-      <a href="../index.html" class="mt-4 btn-exit">Volver al Home.</a>
+      <a href="index.html" class="mt-4 btn-exit">Volver al Home.</a>
     </main>
     <!-- Footer -->
     <footer class="text-white text-center p-4">
@@ -97,14 +96,15 @@
     </footer>
     <!-- Audio -->
     <audio id="suspenseAudio3" autoplay loop>
-      <source src="../multimedia/gritoDiabolik.mp3" type="audio/mp3" />
+      <source src="../multimedia/gritosFinal.mp3" type="audio/mp3" />
       Tu navegador no soporta la reproducción de audio.
     </audio>
     <script>
       //Bucle de Audio
-      const audio3 = document.getElementById("suspenseAudio3");
-      audio3.loop = true;
-      audio3.play();
+      const audio = document.getElementById("suspenseAudio3");
+      audio.loop = true;
+      audio.play();
+      audio.volume = 0.1;
     </script>
   </body>
 </html>

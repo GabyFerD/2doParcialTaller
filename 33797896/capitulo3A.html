@@ -103,12 +103,14 @@
               />
             </div>
 
-            <button type="submit" class="btn-cap2">Registrar Puntaje</button>
+            <button type="submit" class="btn-cap2 btn-puntaje">
+              Registrar Puntaje
+            </button>
           </form>
         </fieldset>
       </section>
 
-      <a href="../index.html" class="mt-4 btn-exit">Volver al Home.</a>
+      <a href="index.html" class="mt-4 btn-exit">Volver al Home.</a>
     </main>
     <!-- Footer -->
     <footer class="text-white text-center p-4">
@@ -121,9 +123,10 @@
     </audio>
     <script>
       //Bucle de Audio
-      const audio3 = document.getElementById("suspenseAudio3");
-      audio3.loop = true;
-      audio3.play();
+      const audio = document.getElementById("suspenseAudio3");
+      audio.loop = true;
+      audio.play();
+      audio.volume = 0.1;
     </script>
   </body>
 </html>

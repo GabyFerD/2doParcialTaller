@@ -12,12 +12,12 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="text-white p-3 text-center">
+    <header class="text-white p-4 text-center">
       <h1>LibroJuego "El Enigma de las Sombras"</h1>
     </header>
 
     <!-- Contenido del Capítulo -->
-    <section class="container mt-5">
+    <section class="container mt-5 mb-5 content-transparent">
       <h1 class="titleUno">"El Enigma de las Sombras"</h1>
       <h2>Capítulo 1: El Misterio Comienza...</h2>
       <p>
@@ -64,13 +64,13 @@
       </p>
       <p>¿Qué harás?</p>
       <button
-        onclick="window.location.href='./capitulos/cap2.html'"
+        onclick="window.location.href='cap2.html'"
         class="btn btn-primary"
       >
         Opción A: Ir al Capítulo 2.
       </button>
       <button
-        onclick="window.location.href='./capitulos/cap3.html'"
+        onclick="window.location.href='cap3.html'"
         class="btn btn-secondary"
       >
         Opción B: Ir al Capítulo 3.
@@ -78,18 +78,23 @@
       <a href="index.html" class="btn btn-exit mt-4">Abandonar el juego.</a>
     </section>
 
+    <!-- Footer -->
+    <footer class="text-white text-center p-4">
+      <p>
+        © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
+      </p>
+    </footer>
+
     <!-- Audio -->
     <audio id="suspenseAudio2" autoplay>
       <source src="./multimedia/suspenso2.mp3" type="audio/mp3" />
       Tu navegador no soporta la reproducción de audio.
     </audio>
 
-    <!-- Footer -->
-    <footer class="text-white text-center p-3 mt-5">
-      <p>
-        © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
-      </p>
-    </footer>
-    <script src="./js/scripts1.js"></script>
+    <script>
+      // audio - para reproducir en bucle
+      const audio = document.getElementById("suspenseAudio2");
+      audio.loop = true;
+    </script>
   </body>
 </html>
