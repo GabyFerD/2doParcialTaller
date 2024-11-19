@@ -7,7 +7,7 @@ document
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "mel" && password === "123") {
+    if (username === "mel" || (username === "Mel" && password === "123")) {
       window.location.href = `admin.html?user=${username}`;
     } else {
       alert("Usuario incorrecto");
