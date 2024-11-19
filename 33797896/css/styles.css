@@ -69,6 +69,10 @@ p {
   border-color: #a11b28;
 }
 
+.btn-play {
+  margin-bottom: 20px;
+}
+
 .btn-exit {
   background-color: #a11b28;
   border-color: #a11b28;

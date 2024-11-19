@@ -19,6 +19,16 @@
     <!-- Contenido del Capítulo -->
     <main class="container mt-5 mb-5 content-transparent">
       <section class="container mt-5">
+        <!--Boton Audio -->
+        <div class="text-center">
+          <audio id="audioLibroJuego" loop>
+            <source src="./multimedia/audioLibroJuego.mp3" type="audio/mp3" />
+            Tu navegador no soporta la reproducción de audio.
+          </audio>
+          <button id="audioControl" class="btn btn-primary btn-play">
+            Play Music
+          </button>
+        </div>
         <h2 class="text-center">Capítulo 1: El Misterio Comienza...</h2>
 
         <p>
@@ -59,7 +69,7 @@
           Pero, ¿te atreverás a enfrentarte a los ecos del pasado? - Avanza al
           Capítulo 2.
         </p>
-        a
+
         <p>
           Dirigirte al Almacén del Puerto. Es un lugar conocido por ser el
           epicentro del bajo mundo de Ravenwood. Tal vez encuentres a alguien
@@ -89,15 +99,21 @@
       </p>
     </footer>
 
-    <!-- Audio -->
-    <audio id="suspenseAudio2" autoplay>
-      <source src="./multimedia/suspenso2.mp3" type="audio/mp3" />
-      Tu navegador no soporta la reproducción de audio.
-    </audio>
-
     <script>
       // audio - para reproducir en bucle
-      const audio = document.getElementById("suspenseAudio2");
+      const audio = document.getElementById("audioLibroJuego");
+      const audioControl = document.getElementById("audioControl");
+
+      audioControl.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+          audioControl.textContent = "Pausa";
+        } else {
+          audio.pause();
+          audioControl.textContent = "Play";
+        }
+      });
+
       audio.loop = true;
     </script>
   </body>

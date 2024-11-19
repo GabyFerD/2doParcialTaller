@@ -55,7 +55,8 @@ p {
   width: 100%;
 }
 
-.btn-cap2 {
+.btn-cap2,
+.btn-play {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: #b22222;
   border-radius: 20px;
@@ -66,9 +67,15 @@ p {
   margin: 0 auto;
 }
 
-.btn-cap2:hover {
+.btn-cap2:hover,
+.btn-play:hover {
   background-color: #8b0000;
   border-color: #8b0000;
+}
+
+.btn-play {
+  width: 20%;
+  margin-bottom: 20px;
 }
 
 .btn-puntaje {
@@ -109,5 +116,8 @@ p {
 
   p {
     font-size: 1rem;
+  }
+  .btn-play {
+    width: 30%;
   }
 }

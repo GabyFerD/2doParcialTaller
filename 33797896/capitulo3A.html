@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Enigma de las Sombras - Capítulo 3A</title>
-    <link rel="stylesheet" href="../css/styles1.css" />
+    <link rel="stylesheet" href="./css/styles1.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,6 +18,15 @@
     <!-- Contenedor Principal -->
     <main class="container mt-5 mb-5 content-transparent">
       <section class="container mt-5">
+        <!--Boton Audio -->
+        <div class="text-center">
+          <audio id="audioCap3A" loop>
+            <source src="./multimedia/audioCap3A.mp3" type="audio/mp3" />
+            Tu navegador no soporta la reproducción de audio.
+          </audio>
+          <button id="audioControl" class="btn-play">Play Music</button>
+        </div>
+
         <h2 class="text-center">Capítulo 3A: La figura encapuchada</h2>
         <p>
           No puedes permitir que la figura encapuchada se escape, así que te
@@ -118,16 +127,23 @@
     <footer class="text-white text-center p-3 mt-5">
       © 2024 LibroJuego - Todos los derechos reservados - Gabriela Da Silva
     </footer>
-    <!-- Audio -->
-    <audio id="suspenseAudio3" autoplay loop>
-      <source src="../multimedia/sirena.mp3" type="audio/mp3" />
-      Tu navegador no soporta la reproducción de audio.
-    </audio>
+
     <script>
       //Bucle de Audio
-      const audio = document.getElementById("suspenseAudio3");
+      const audio = document.getElementById("audioCap3A");
+      const audioControl = document.getElementById("audioControl");
+
+      audioControl.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+          audioControl.textContent = "Pausa";
+        } else {
+          audio.pause();
+          audioControl.textContent = "Play";
+        }
+      });
+
       audio.loop = true;
-      audio.play();
       audio.volume = 0.1;
     </script>
   </body>
