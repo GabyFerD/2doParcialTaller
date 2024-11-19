@@ -170,11 +170,24 @@ a:hover {
     font-size: 2rem;
   }
 
-  footer {
-    margin-bottom: 0;
+  .containerTable h2 {
+    font-size: 1.5rem;
   }
 
-  .btn-lg {
+  .table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .table-responsive .table {
     width: 100%;
+
+    footer {
+      margin-bottom: 0;
+    }
+
+    .btn-lg {
+      width: 100%;
+    }
   }
 }
